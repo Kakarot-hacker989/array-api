@@ -20,31 +20,26 @@ public class restauController {
 	
 	@GetMapping("Idly")
 	public restoResMain getbyid() {
-		System.out.println("recieved..........");
 		return this.idl.res();
 	}
 	
 	@GetMapping("Cake")
 	public restoResMain getcakes() {
-		System.out.println("recieved..........");
 		return this.idl.getCake();
 	}
 	
 	@GetMapping("Pizza")
 	public restoResMain getcpizza() {
-		System.out.println("recieved..........");
 		return this.idl.getpizza();
 	}
 	
 	@GetMapping("Sandwich")
 	public restoResMain getSand() {
-		System.out.println("recieved..........");
 		return this.idl.getSandwich();
 	}
 	
 	@GetMapping("Dosa")
 	public restoResMain getDsa() {
-		System.out.println("recieved..........");
 		return this.idl.getDosa();
 	}
 }
