@@ -2,65 +2,13 @@ package com.zomato.Zomato.entity;
 
 
 public class categories {
-//	public String message;
-//	public Boolean result;
-//	public String[] data;
-//	
-//	
-//	public categories(String message, Boolean result, String[] data) {
-//		super();
-//		this.message = message;
-//		this.result = result;
-//		this.data = data;
-//	}
-//
-//
-//	public categories() {
-//		super();
-//	}
-//
-//
-//	public String getMessage() {
-//		return message;
-//	}
-//
-//
-//	public void setMessage(String message) {
-//		this.message = message;
-//	}
-//
-//
-//	public Boolean getResult() {
-//		return result;
-//	}
-//
-//
-//	public void setResult(Boolean result) {
-//		this.result = result;
-//	}
-//
-//
-//	public String[] getData() {
-//		return data;
-//	}
-//
-//
-//	public void setData(String[] data) {
-//		this.data = data;
-//	}
-//
-//
-//	@Override
-//	public String toString() {
-//		return "categories [message=" + message + ", result=" + result + ", data=" + Arrays.toString(data) + "]";
-//	}
 
 	
 	private boolean availability;
     private String photoUrl;
-    private double price;
-    private int Id;
-    private String shopName;
+    private String price;
+    private String Id;
+    private String Name;
     
     
 	public categories() {
@@ -69,13 +17,13 @@ public class categories {
 	}
 
 
-	public categories(boolean availability, String photoUrl, double price, int id, String shopName) {
+	public categories(boolean availability, String photoUrl, String price, String id, String Name) {
 		super();
 		this.availability = availability;
 		this.photoUrl = photoUrl;
 		this.price = price;
 		Id = id;
-		this.shopName = shopName;
+		this.Name = Name;
 	}
 
 
@@ -99,40 +47,40 @@ public class categories {
 	}
 
 
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
 
-	public void setPrice(double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 
 
-	public int getId() {
+	public String getId() {
 		return Id;
 	}
 
 
-	public void setId(int id) {
+	public void setId(String id) {
 		Id = id;
 	}
 
 
 	public String getShopName() {
-		return shopName;
+		return Name;
 	}
 
 
 	public void setShopName(String shopName) {
-		this.shopName = shopName;
+		this.Name = shopName;
 	}
 
 
 	@Override
 	public String toString() {
 		return "service [availability=" + availability + ", photoUrl=" + photoUrl + ", price=" + price + ", Id=" + Id
-				+ ", shopName=" + shopName + "]";
+				+ ", shopName=" + Name + "]";
 	}
 	
 	

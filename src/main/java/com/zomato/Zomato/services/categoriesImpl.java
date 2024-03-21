@@ -14,13 +14,11 @@ public class categoriesImpl implements categoriesServ {
 	 
 	 public categoriesImpl() {
 		list  = new ArrayList<>();
-//		list.add(new categories("", true,  data));
-		list  = new ArrayList<>();
-		list.add(new categories(true,"https://images.hdqwalls.com/wallpapers/dragon-ball-son-goku-4k-bl.jpg",1000,01,"comicStan"));
-		list.add(new categories(true,"https://wallpapercave.com/wp/wp2425957.jpg",2000,02,"comicStan"));
-		list.add(new categories(true,"https://www.3dspartanshop.com/wp-content/uploads/2023/04/dragon-ball-goku-black-statue.jpg",5000,03,"comicStan"));
-		list.add(new categories(true,"https://www.raccoongames.es/img/productos/figura-dragon-ball-z-son-goku-super-saiyan-s-h-figuarts-15m/61B2XwPvD+L._SL1376_.jpg",500,04,"comicStan"));
-		list.add(new categories(true,"https://artfiles.alphacoders.com/122/thumb-1920-122158.jpg",1500,05,"comicStan"));
+		list.add(new categories(true,"https://cdn.shopify.com/s/files/1/0362/1653/articles/Birthday_Cake_Square_5_1400x.progressive.jpg?v=1505903378","","01","Cake"));
+		list.add(new categories(true,"https://www.indianpolitics.co.in/wp-content/uploads/2021/02/dosa_c.jpg","","02","Dosa"));
+		list.add(new categories(true,"https://st1.latestly.com/wp-content/uploads/2020/03/idli.jpg","","03","Idly"));
+		list.add(new categories(true,"https://wallpaperaccess.com/full/2237015.jpg","","04","Pizza"));
+		list.add(new categories(true,"https://wallpaperaccess.com/full/1727371.jpg","","05","Sandwich"));
 	 }
 	@Override
 	public List<categories> getCat() {
